@@ -53,6 +53,9 @@ input{
     font-size: 1.5rem;
     font-weight:none;
 }
+select{
+    color: black;
+}
 
 
 </style>
@@ -83,9 +86,19 @@ input{
         <input type="text" name="country" placeholder="e.g.'bangladesh'">
 
         <br>
+        <label for="units">Select Unit Type:</label>
+        <select name="units" id="units">
+            <option value="standard">Standard</option>
+            
+            <option value="metric">Metric</option>
+            
+            <option value="imperial">Imperial</option>
+        </select>
 
+        
 
         <input name= "submit" type="submit" value="Get Weather Data">
+
 
         </form>
         
