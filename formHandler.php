@@ -23,9 +23,9 @@ if (formSubmitted()){
     $country = $_GET['country'];
     $city = $_GET['city'];
     $units = $_GET['units'];
-    echo 'Weather data for '.$city.', '.$country;
+    echo 'Weather data for '.$city.', '.$country.' in '.$units.' units:' ;
 
-    $api_url = 'http://api.openweathermap.org/data/2.5/weather?q='.$city.','.$country.'&appid='.$api_key;
+    $api_url = 'http://api.openweathermap.org/data/2.5/weather?q='.$city.','.$country.'&units='.$units.'&appid='.$api_key;
 
     $weather_data = json_decode ( file_get_contents($api_url), true);
 
