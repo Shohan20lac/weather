@@ -3,4 +3,10 @@
  
  <br>
  
- This project is unpublished online. So to use it, download it and host it locally from your machine.
+
+Installation
+============
+1. Have xampp installed and apache server running
+2. Clone/Download the whole repository
+3. (Important) Place the root folder "weather" inside C:/xampp/htdocs of your local machine
+4. go to http://localhost/weather/index.php on your browser
